@@ -47,3 +47,14 @@ cat $FusionCfg
 # Check dhcpd config
 DhcpParam="/Library/Preferences/VMware Fusion/$VmNet/dhcpd.conf"
 cat $DhcpParam
+
+# subnet 192.168.235.0 netmask 255.255.255.0 {
+#       range 192.168.235.128 192.168.235.254;
+#       option broadcast-address 192.168.235.255;
+#        option domain-name-servers 192.168.235.1;
+#        option domain-name localdomain;
+#        default-lease-time 259200;                # default is 30 minutes
+#        max-lease-time 604800;                    # default is 2 hours
+#        next-server 192.168.235.11;               # For PXE
+#        filename "pxelinux\pxelinux.0";           # For PXE
+#}
